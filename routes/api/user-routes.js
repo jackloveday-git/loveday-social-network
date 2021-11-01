@@ -5,7 +5,7 @@ const router = require('express').Router();
 
 // Init User Commands
 const {
-    getUsers, // Get All
+    getAllUsers, // Get All
     getUserById, // Get by id
     createUser, // Create new user
     updateUser, // Update/edit user
@@ -17,7 +17,7 @@ const {
 // Base route, get users, create new user
 router
     .route('/')
-    .get(getUsers)
+    .get(getAllUsers)
     .post(createUser);
 
 // Get user by id, update, or delete
