@@ -5,7 +5,7 @@ const router = require('express').Router();
 
 // Init Thought Commands
 const {
-    getThoughts, // Get All
+    getAllThoughts, // Get All
     getThoughtById, // Get by id
     createThought, // Create new thought
     updateThought, // Update/edit thought
@@ -17,7 +17,7 @@ const {
 // Base route - get thoughts, create new thought
 router
     .route('/')
-    .get(getThoughts)
+    .get(getAllThoughts)
     .post(createThought)
 
 // By id, update, or delete
